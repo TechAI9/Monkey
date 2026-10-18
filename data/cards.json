@@ -1,0 +1,2499 @@
+{
+ "version": 1,
+ "cards": [
+  {
+   "id": "EX1_008",
+   "name": "银色侍从",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "圣盾",
+   "art": "res://assets/art/EX1_008.webp",
+   "attack": 1,
+   "health": 1,
+   "keywords": [
+    "DIVINE_SHIELD"
+   ]
+  },
+  {
+   "id": "EX1_029",
+   "name": "麻风侏儒",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "亡语：对敌方英雄造成2点伤害。",
+   "art": "res://assets/art/EX1_029.webp",
+   "attack": 2,
+   "health": 1,
+   "effects": [
+    {
+     "trigger": "deathrattle",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 2,
+       "to": "enemy_hero",
+       "spell": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_405",
+   "name": "持盾卫士",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "嘲讽",
+   "art": "res://assets/art/EX1_405.webp",
+   "attack": 0,
+   "health": 4,
+   "keywords": [
+    "TAUNT"
+   ]
+  },
+  {
+   "id": "CS2_169",
+   "name": "幼龙鹰",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "风怒",
+   "art": "res://assets/art/CS2_169.webp",
+   "attack": 1,
+   "health": 1,
+   "keywords": [
+    "WINDFURY"
+   ]
+  },
+  {
+   "id": "CS2_188",
+   "name": "叫嚣的中士",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "战吼：在本回合中，使一个随从获得+2攻击力。",
+   "art": "res://assets/art/CS2_188.webp",
+   "attack": 1,
+   "health": 1,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "buff",
+       "atk": 2,
+       "hp": 0,
+       "to": "chosen",
+       "duration": "turn"
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "CS1_042",
+   "name": "闪金镇步兵",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "嘲讽",
+   "art": "res://assets/art/CS1_042.webp",
+   "attack": 1,
+   "health": 2,
+   "keywords": [
+    "TAUNT"
+   ]
+  },
+  {
+   "id": "CS2_231",
+   "name": "小精灵",
+   "cost": 0,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "",
+   "art": "res://assets/art/CS2_231.webp",
+   "attack": 1,
+   "health": 1
+  },
+  {
+   "id": "CS2_120",
+   "name": "淡水鳄",
+   "cost": 2,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "",
+   "art": "res://assets/art/CS2_120.webp",
+   "attack": 2,
+   "health": 3
+  },
+  {
+   "id": "CS2_121",
+   "name": "霜狼步兵",
+   "cost": 2,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "嘲讽",
+   "art": "res://assets/art/CS2_121.webp",
+   "attack": 2,
+   "health": 2,
+   "keywords": [
+    "TAUNT"
+   ]
+  },
+  {
+   "id": "CS2_142",
+   "name": "狗头人地卜师",
+   "cost": 2,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "法术伤害+1",
+   "art": "res://assets/art/CS2_142.webp",
+   "attack": 2,
+   "health": 2,
+   "spell_damage": 1
+  },
+  {
+   "id": "EX1_096",
+   "name": "战利品贮藏者",
+   "cost": 2,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "亡语：抽一张牌。",
+   "art": "res://assets/art/EX1_096.webp",
+   "attack": 2,
+   "health": 1,
+   "effects": [
+    {
+     "trigger": "deathrattle",
+     "actions": [
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "NEW1_019",
+   "name": "飞刀杂耍者",
+   "cost": 2,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "在你召唤一个随从后，随机对一个敌人造成1点伤害。",
+   "art": "res://assets/art/NEW1_019.webp",
+   "attack": 3,
+   "health": 2,
+   "effects": [
+    {
+     "trigger": "on_summon",
+     "actions": [
+      {
+       "do": "random_damage",
+       "amount": 1,
+       "count": 1,
+       "pool": "enemy_characters"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_012",
+   "name": "血法师萨尔诺斯",
+   "cost": 2,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "法术伤害+1，亡语：抽一张牌。",
+   "art": "res://assets/art/EX1_012.webp",
+   "attack": 1,
+   "health": 1,
+   "spell_damage": 1,
+   "effects": [
+    {
+     "trigger": "deathrattle",
+     "actions": [
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_393",
+   "name": "阿曼尼狂战士",
+   "cost": 2,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "受伤时拥有+3攻击力。",
+   "art": "res://assets/art/EX1_393.webp",
+   "attack": 2,
+   "health": 3,
+   "enrage": {
+    "attack": 3
+   }
+  },
+  {
+   "id": "NEW1_037",
+   "name": "铸剑师",
+   "cost": 2,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "在你的回合结束时，随机使另一个友方随从获得+1攻击力。",
+   "art": "res://assets/art/NEW1_037.webp",
+   "attack": 1,
+   "health": 3,
+   "effects": [
+    {
+     "trigger": "end_of_turn",
+     "actions": [
+      {
+       "do": "buff",
+       "atk": 1,
+       "hp": 0,
+       "to": "random_friendly_other_minion"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_125",
+   "name": "铁鬃灰熊",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "嘲讽",
+   "art": "res://assets/art/CS2_125.webp",
+   "attack": 3,
+   "health": 3,
+   "keywords": [
+    "TAUNT"
+   ]
+  },
+  {
+   "id": "CS2_124",
+   "name": "狼骑兵",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "冲锋",
+   "art": "res://assets/art/CS2_124.webp",
+   "attack": 3,
+   "health": 1,
+   "keywords": [
+    "CHARGE"
+   ]
+  },
+  {
+   "id": "CS2_141",
+   "name": "铁炉堡火枪手",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "战吼：造成1点伤害。",
+   "art": "res://assets/art/CS2_141.webp",
+   "attack": 2,
+   "health": 2,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 1,
+       "to": "chosen",
+       "spell": true
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "CS2_117",
+   "name": "大地之环先知",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "战吼：恢复3点生命值。",
+   "art": "res://assets/art/CS2_117.webp",
+   "attack": 3,
+   "health": 3,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "heal",
+       "amount": 3,
+       "to": "chosen"
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "EX1_556",
+   "name": "麦田傀儡",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "亡语：召唤一个2/1的损坏的傀儡。",
+   "art": "res://assets/art/EX1_556.webp",
+   "attack": 2,
+   "health": 3,
+   "effects": [
+    {
+     "trigger": "deathrattle",
+     "actions": [
+      {
+       "do": "summon",
+       "card": "skele21",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_007",
+   "name": "苦痛侍僧",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "每当本随从受到伤害，抽一张牌。",
+   "art": "res://assets/art/EX1_007.webp",
+   "attack": 1,
+   "health": 4,
+   "effects": [
+    {
+     "trigger": "on_self_damaged",
+     "actions": [
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_050",
+   "name": "寒光智者",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "战吼：每个玩家抽两张牌。",
+   "art": "res://assets/art/EX1_050.webp",
+   "attack": 2,
+   "health": 2,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "draw",
+       "count": 2,
+       "who": "owner"
+      },
+      {
+       "do": "draw",
+       "count": 2,
+       "who": "opponent"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_020",
+   "name": "血色十字军战士",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "圣盾",
+   "art": "res://assets/art/EX1_020.webp",
+   "attack": 3,
+   "health": 1,
+   "keywords": [
+    "DIVINE_SHIELD"
+   ]
+  },
+  {
+   "id": "CS2_182",
+   "name": "冰风雪人",
+   "cost": 4,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "",
+   "art": "res://assets/art/CS2_182.webp",
+   "attack": 4,
+   "health": 5
+  },
+  {
+   "id": "CS2_179",
+   "name": "森金持盾卫士",
+   "cost": 4,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "嘲讽",
+   "art": "res://assets/art/CS2_179.webp",
+   "attack": 3,
+   "health": 5,
+   "keywords": [
+    "TAUNT"
+   ]
+  },
+  {
+   "id": "CS2_147",
+   "name": "侏儒发明家",
+   "cost": 4,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "战吼：抽一张牌。",
+   "art": "res://assets/art/CS2_147.webp",
+   "attack": 2,
+   "health": 4,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_023",
+   "name": "银月城卫兵",
+   "cost": 4,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "圣盾",
+   "art": "res://assets/art/EX1_023.webp",
+   "attack": 3,
+   "health": 3,
+   "keywords": [
+    "DIVINE_SHIELD"
+   ]
+  },
+  {
+   "id": "CS2_181",
+   "name": "负伤剑圣",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "战吼：对自身造成4点伤害。",
+   "art": "res://assets/art/CS2_181.webp",
+   "attack": 4,
+   "health": 7,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 4,
+       "to": "self"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_595",
+   "name": "诅咒教派领袖",
+   "cost": 4,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "在一个友方随从死亡后，抽一张牌。",
+   "art": "res://assets/art/EX1_595.webp",
+   "attack": 4,
+   "health": 2,
+   "effects": [
+    {
+     "trigger": "on_friendly_death",
+     "actions": [
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "NEW1_026",
+   "name": "紫罗兰教师",
+   "cost": 4,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "每当你施放一个法术，召唤一个1/1的紫罗兰学徒。",
+   "art": "res://assets/art/NEW1_026.webp",
+   "attack": 3,
+   "health": 5,
+   "effects": [
+    {
+     "trigger": "on_spell_cast",
+     "actions": [
+      {
+       "do": "summon",
+       "card": "NEW1_026t",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_067",
+   "name": "银色指挥官",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "冲锋圣盾",
+   "art": "res://assets/art/EX1_067.webp",
+   "attack": 4,
+   "health": 2,
+   "keywords": [
+    "CHARGE",
+    "DIVINE_SHIELD"
+   ]
+  },
+  {
+   "id": "CS2_200",
+   "name": "石拳食人魔",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "",
+   "art": "res://assets/art/CS2_200.webp",
+   "attack": 6,
+   "health": 7
+  },
+  {
+   "id": "CS1_069",
+   "name": "沼泽爬行者",
+   "cost": 5,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "嘲讽",
+   "art": "res://assets/art/CS1_069.webp",
+   "attack": 3,
+   "health": 6,
+   "keywords": [
+    "TAUNT"
+   ]
+  },
+  {
+   "id": "CS2_150",
+   "name": "雷矛特种兵",
+   "cost": 5,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "战吼：造成2点伤害。",
+   "art": "res://assets/art/CS2_150.webp",
+   "attack": 4,
+   "health": 2,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 2,
+       "to": "chosen",
+       "spell": true
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "CS2_151",
+   "name": "白银之手骑士",
+   "cost": 5,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "战吼：召唤一个2/2的侍从。",
+   "art": "res://assets/art/CS2_151.webp",
+   "attack": 4,
+   "health": 4,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "summon",
+       "card": "CS2_152",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_095",
+   "name": "加基森拍卖师",
+   "cost": 7,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "每当你施放一个法术，抽一张牌。",
+   "art": "res://assets/art/EX1_095.webp",
+   "attack": 4,
+   "health": 4,
+   "effects": [
+    {
+     "trigger": "on_spell_cast",
+     "actions": [
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "NEW1_041",
+   "name": "狂奔科多兽",
+   "cost": 5,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "战吼：随机消灭一个攻击力小于或等于2的敌方随从。",
+   "art": "res://assets/art/NEW1_041.webp",
+   "attack": 3,
+   "health": 5,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "destroy",
+       "to": "chosen"
+      }
+     ],
+     "target": "enemy_minion",
+     "filter": {
+      "attack_lte": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "EX1_284",
+   "name": "碧蓝幼龙",
+   "cost": 5,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "法术伤害+1，战吼：抽一张牌。",
+   "art": "res://assets/art/EX1_284.webp",
+   "attack": 4,
+   "health": 5,
+   "spell_damage": 1,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_097",
+   "name": "憎恶",
+   "cost": 5,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "嘲讽，亡语：对所有角色造成2点伤害。",
+   "art": "res://assets/art/EX1_097.webp",
+   "attack": 4,
+   "health": 4,
+   "keywords": [
+    "TAUNT"
+   ],
+   "effects": [
+    {
+     "trigger": "deathrattle",
+     "actions": [
+      {
+       "do": "damage_all",
+       "amount": 2,
+       "pool": "all_characters"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_283",
+   "name": "冰霜元素",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "战吼：冻结一个角色。",
+   "art": "res://assets/art/EX1_283.webp",
+   "attack": 5,
+   "health": 5,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "freeze",
+       "to": "chosen"
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "EX1_032",
+   "name": "烈日行者",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "嘲讽圣盾",
+   "art": "res://assets/art/EX1_032.webp",
+   "attack": 4,
+   "health": 5,
+   "keywords": [
+    "TAUNT",
+    "DIVINE_SHIELD"
+   ]
+  },
+  {
+   "id": "EX1_033",
+   "name": "风怒鹰身人",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "风怒",
+   "art": "res://assets/art/EX1_033.webp",
+   "attack": 4,
+   "health": 5,
+   "keywords": [
+    "WINDFURY"
+   ]
+  },
+  {
+   "id": "EX1_110",
+   "name": "凯恩·血蹄",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "嘲讽。亡语：召唤一个5/5的贝恩·血蹄。",
+   "art": "res://assets/art/EX1_110.webp",
+   "attack": 5,
+   "health": 5,
+   "keywords": [
+    "TAUNT"
+   ],
+   "effects": [
+    {
+     "trigger": "deathrattle",
+     "actions": [
+      {
+       "do": "summon",
+       "card": "EX1_110t",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_577",
+   "name": "比斯巨兽",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "亡语：为你的对手召唤一个3/3的皮普·急智。",
+   "art": "res://assets/art/EX1_577.webp",
+   "attack": 9,
+   "health": 7,
+   "effects": [
+    {
+     "trigger": "deathrattle",
+     "actions": [
+      {
+       "do": "summon",
+       "card": "EX1_finkle",
+       "count": 1,
+       "who": "opponent"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_583",
+   "name": "艾露恩的女祭司",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "战吼：为你的英雄恢复4点生命值。",
+   "art": "res://assets/art/EX1_583.webp",
+   "attack": 5,
+   "health": 4,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "heal",
+       "amount": 4,
+       "to": "owner_hero"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_002",
+   "name": "黑骑士",
+   "cost": 4,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "战吼：消灭一个具有嘲讽的敌方随从。",
+   "art": "res://assets/art/EX1_002.webp",
+   "attack": 4,
+   "health": 4,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "destroy",
+       "to": "chosen"
+      }
+     ],
+     "target": "enemy_minion",
+     "filter": {
+      "keyword": "TAUNT"
+     }
+    }
+   ]
+  },
+  {
+   "id": "EX1_249",
+   "name": "迦顿男爵",
+   "cost": 7,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "在你的回合结束时，对所有其他角色造成2点伤害。",
+   "art": "res://assets/art/EX1_249.webp",
+   "attack": 7,
+   "health": 7,
+   "effects": [
+    {
+     "trigger": "end_of_turn",
+     "actions": [
+      {
+       "do": "damage_all",
+       "amount": 2,
+       "pool": "all_other_characters"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_155",
+   "name": "大法师",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "法术伤害+1",
+   "art": "res://assets/art/CS2_155.webp",
+   "attack": 4,
+   "health": 7,
+   "spell_damage": 1
+  },
+  {
+   "id": "NEW1_040",
+   "name": "霍格",
+   "cost": 6,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "在你的回合结束时，召唤一个2/2并具有嘲讽的豺狼人。",
+   "art": "res://assets/art/NEW1_040.webp",
+   "attack": 4,
+   "health": 4,
+   "effects": [
+    {
+     "trigger": "end_of_turn",
+     "actions": [
+      {
+       "do": "summon",
+       "card": "NEW1_040t",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_298",
+   "name": "炎魔之王拉格纳罗斯",
+   "cost": 8,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "无法攻击。在你的回合结束时，随机对一个敌人造成8点伤害。",
+   "art": "res://assets/art/EX1_298.webp",
+   "attack": 8,
+   "health": 8,
+   "keywords": [
+    "CANNOT_ATTACK"
+   ],
+   "effects": [
+    {
+     "trigger": "end_of_turn",
+     "actions": [
+      {
+       "do": "random_damage",
+       "amount": 8,
+       "count": 1,
+       "pool": "enemy_characters"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "NEW1_038",
+   "name": "格鲁尔",
+   "cost": 8,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "在每个回合结束时，获得+1/+1。",
+   "art": "res://assets/art/NEW1_038.webp",
+   "attack": 7,
+   "health": 7,
+   "effects": [
+    {
+     "trigger": "end_of_turn",
+     "actions": [
+      {
+       "do": "buff",
+       "atk": 1,
+       "hp": 1,
+       "to": "self"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_561",
+   "name": "阿莱克丝塔萨",
+   "cost": 9,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "战吼：将一方英雄的剩余生命值变为15。",
+   "art": "res://assets/art/EX1_561.webp",
+   "attack": 8,
+   "health": 8,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "set_hero_health",
+       "value": 15,
+       "to": "chosen"
+      }
+     ],
+     "target": "any_hero"
+    }
+   ]
+  },
+  {
+   "id": "EX1_563",
+   "name": "玛里苟斯",
+   "cost": 9,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "法术伤害+5",
+   "art": "res://assets/art/EX1_563.webp",
+   "attack": 4,
+   "health": 12,
+   "spell_damage": 5
+  },
+  {
+   "id": "EX1_562",
+   "name": "奥妮克希亚",
+   "cost": 9,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "战吼：召唤数条1/1的雏龙，直到你的随从数量达到上限。",
+   "art": "res://assets/art/EX1_562.webp",
+   "attack": 8,
+   "health": 8,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "summon_until_full",
+       "card": "EX1_116t",
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "NEW1_030",
+   "name": "死亡之翼",
+   "cost": 10,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "战吼：消灭所有其他随从，并弃掉你的手牌。",
+   "art": "res://assets/art/NEW1_030.webp",
+   "attack": 12,
+   "health": 12,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "destroy",
+       "to": "all_other_minions"
+      },
+      {
+       "do": "discard_hand",
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_029",
+   "name": "火球术",
+   "cost": 4,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "造成6点伤害。",
+   "art": "res://assets/art/CS2_029.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 6,
+       "to": "chosen",
+       "spell": true
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "CS2_024",
+   "name": "寒冰箭",
+   "cost": 2,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "对一个角色造成3点伤害，并使其冻结。",
+   "art": "res://assets/art/CS2_024.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 3,
+       "to": "chosen",
+       "spell": true
+      },
+      {
+       "do": "freeze",
+       "to": "chosen"
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "EX1_277",
+   "name": "奥术飞弹",
+   "cost": 1,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "造成3点伤害，随机分配到所有敌人身上。",
+   "art": "res://assets/art/EX1_277.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "random_damage",
+       "amount": 1,
+       "count": 3,
+       "pool": "enemy_characters",
+       "spell": true,
+       "grow_count": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_025",
+   "name": "魔爆术",
+   "cost": 2,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "对所有敌方随从造成1点伤害。",
+   "art": "res://assets/art/CS2_025.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage_all",
+       "amount": 1,
+       "pool": "enemy_minions",
+       "spell": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_026",
+   "name": "冰霜新星",
+   "cost": 3,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "冻结所有敌方随从。",
+   "art": "res://assets/art/CS2_026.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "freeze",
+       "to": "all_enemy_minions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_028",
+   "name": "暴风雪",
+   "cost": 6,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "对所有敌方随从造成2点伤害，并使其冻结。",
+   "art": "res://assets/art/CS2_028.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage_all",
+       "amount": 2,
+       "pool": "enemy_minions",
+       "spell": true
+      },
+      {
+       "do": "freeze",
+       "to": "all_enemy_minions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_032",
+   "name": "烈焰风暴",
+   "cost": 7,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "对所有敌方随从造成5点伤害。",
+   "art": "res://assets/art/CS2_032.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage_all",
+       "amount": 4,
+       "pool": "enemy_minions",
+       "spell": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_022",
+   "name": "变形术",
+   "cost": 4,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "使一个随从变形成为1/1的绵羊。",
+   "art": "res://assets/art/CS2_022.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "transform",
+       "into": "CS2_tk1",
+       "to": "chosen"
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "EX1_279",
+   "name": "炎爆术",
+   "cost": 10,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "EPIC",
+   "set": "EXPERT1",
+   "text": "造成10点伤害。",
+   "art": "res://assets/art/EX1_279.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 10,
+       "to": "chosen",
+       "spell": true
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "CS2_023",
+   "name": "奥术智慧",
+   "cost": 3,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "抽两张牌。",
+   "art": "res://assets/art/CS2_023.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "draw",
+       "count": 2,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_027",
+   "name": "镜像",
+   "cost": 1,
+   "type": "SPELL",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "召唤两个0/2，并具有嘲讽的随从。",
+   "art": "res://assets/art/CS2_027.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "summon",
+       "card": "CS2_mirror",
+       "count": 2,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_033",
+   "name": "水元素",
+   "cost": 4,
+   "type": "MINION",
+   "class": "MAGE",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "冻结任何受到本随从伤害的角色。",
+   "art": "res://assets/art/CS2_033.webp",
+   "attack": 3,
+   "health": 6,
+   "keywords": [
+    "FREEZE_ON_DAMAGE"
+   ]
+  },
+  {
+   "id": "NEW1_012",
+   "name": "法力浮龙",
+   "cost": 1,
+   "type": "MINION",
+   "class": "MAGE",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "每当你施放一个法术，便获得+1攻击力。",
+   "art": "res://assets/art/NEW1_012.webp",
+   "attack": 1,
+   "health": 3,
+   "effects": [
+    {
+     "trigger": "on_spell_cast",
+     "actions": [
+      {
+       "do": "buff",
+       "atk": 1,
+       "hp": 0,
+       "to": "self"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_608",
+   "name": "巫师学徒",
+   "cost": 2,
+   "type": "MINION",
+   "class": "MAGE",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "你的法术的法力值消耗减少（1）点（但不能少于1点）。",
+   "art": "res://assets/art/EX1_608.webp",
+   "attack": 3,
+   "health": 2,
+   "keywords": [
+    "SPELL_COST_REDUCE"
+   ],
+   "cost_reduce": 1
+  },
+  {
+   "id": "EX1_559",
+   "name": "大法师安东尼达斯",
+   "cost": 7,
+   "type": "MINION",
+   "class": "MAGE",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "每当你施放一个法术，将一张“火球术”法术牌置入你的手牌。",
+   "art": "res://assets/art/EX1_559.webp",
+   "attack": 5,
+   "health": 7,
+   "effects": [
+    {
+     "trigger": "on_spell_cast",
+     "actions": [
+      {
+       "do": "add_card",
+       "card": "CS2_029",
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_108",
+   "name": "斩杀",
+   "cost": 1,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "消灭一个受伤的敌方随从。",
+   "art": "res://assets/art/CS2_108.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "destroy",
+       "to": "chosen"
+      }
+     ],
+     "target": "enemy_minion",
+     "filter": {
+      "damaged": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "CS2_114",
+   "name": "顺劈斩",
+   "cost": 2,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "随机对两个敌方随从造成2点伤害。",
+   "art": "res://assets/art/CS2_114.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "random_damage",
+       "amount": 2,
+       "count": 2,
+       "pool": "enemy_minions",
+       "distinct": true,
+       "spell": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_400",
+   "name": "旋风斩",
+   "cost": 1,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "对所有随从造成1点伤害。",
+   "art": "res://assets/art/EX1_400.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage_all",
+       "amount": 1,
+       "pool": "all_minions",
+       "spell": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_410",
+   "name": "盾牌猛击",
+   "cost": 1,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "EPIC",
+   "set": "EXPERT1",
+   "text": "你每有1点护甲值，便对一个随从造成1点伤害。",
+   "art": "res://assets/art/EX1_410.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 0,
+       "amount_from": "armor",
+       "to": "chosen",
+       "spell": true
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "EX1_606",
+   "name": "盾牌格挡",
+   "cost": 2,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "获得5点护甲值。抽一张牌。",
+   "art": "res://assets/art/EX1_606.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "armor",
+       "amount": 5,
+       "who": "owner"
+      },
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_391",
+   "name": "猛击",
+   "cost": 1,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "对一个随从造成2点伤害，如果它依然存活，则抽一张牌。",
+   "art": "res://assets/art/EX1_391.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 2,
+       "to": "chosen",
+       "spell": true
+      },
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner",
+       "if": {
+        "target_alive": true
+       }
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "EX1_392",
+   "name": "战斗怒火",
+   "cost": 2,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "每有一个受伤的友方角色，便抽一张牌。",
+   "art": "res://assets/art/EX1_392.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "draw_per_damaged_friendly"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_408",
+   "name": "致死打击",
+   "cost": 4,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "造成4点伤害；如果你的生命值小于或等于12点，则改为造成6点伤害。",
+   "art": "res://assets/art/EX1_408.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 4,
+       "to": "chosen",
+       "spell": true,
+       "bonus_if": {
+        "hero_hp_lte": 12,
+        "bonus": 2
+       }
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "EX1_607",
+   "name": "怒火中烧",
+   "cost": 0,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "对一个随从造成1点伤害，并使其获得+2攻击力。",
+   "art": "res://assets/art/EX1_607.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 1,
+       "to": "chosen",
+       "spell": true
+      },
+      {
+       "do": "buff",
+       "atk": 2,
+       "hp": 0,
+       "to": "chosen"
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "CS2_104",
+   "name": "狂暴",
+   "cost": 2,
+   "type": "SPELL",
+   "class": "WARRIOR",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "使一个受伤的随从获得+3/+3。",
+   "art": "res://assets/art/CS2_104.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "buff",
+       "atk": 3,
+       "hp": 3,
+       "to": "chosen"
+      }
+     ],
+     "target": "friendly_minion",
+     "filter": {
+      "damaged": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "EX1_603",
+   "name": "严酷的监工",
+   "cost": 2,
+   "type": "MINION",
+   "class": "WARRIOR",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "战吼：对一个随从造成1点伤害，并使其获得+2攻击力。",
+   "art": "res://assets/art/EX1_603.webp",
+   "attack": 2,
+   "health": 3,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 1,
+       "to": "chosen",
+       "spell": true
+      },
+      {
+       "do": "buff",
+       "atk": 2,
+       "hp": 0,
+       "to": "chosen"
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "NEW1_011",
+   "name": "库卡隆精英卫士",
+   "cost": 4,
+   "type": "MINION",
+   "class": "WARRIOR",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "冲锋",
+   "art": "res://assets/art/NEW1_011.webp",
+   "attack": 4,
+   "health": 3,
+   "keywords": [
+    "CHARGE"
+   ]
+  },
+  {
+   "id": "EX1_414",
+   "name": "格罗玛什·地狱咆哮",
+   "cost": 8,
+   "type": "MINION",
+   "class": "WARRIOR",
+   "rarity": "LEGENDARY",
+   "set": "EXPERT1",
+   "text": "冲锋。受伤时拥有+6攻击力。",
+   "art": "res://assets/art/EX1_414.webp",
+   "attack": 4,
+   "health": 9,
+   "keywords": [
+    "CHARGE"
+   ],
+   "enrage": {
+    "attack": 6
+   }
+  },
+  {
+   "id": "EX1_402",
+   "name": "铸甲师",
+   "cost": 2,
+   "type": "MINION",
+   "class": "WARRIOR",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "每当一个友方随从受到伤害，便获得1点护甲值。",
+   "art": "res://assets/art/EX1_402.webp",
+   "attack": 1,
+   "health": 4,
+   "effects": [
+    {
+     "trigger": "on_friendly_minion_damaged",
+     "actions": [
+      {
+       "do": "armor",
+       "amount": 1,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_604",
+   "name": "暴乱狂战士",
+   "cost": 3,
+   "type": "MINION",
+   "class": "WARRIOR",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "每当一个随从受到伤害，便获得+1攻击力。",
+   "art": "res://assets/art/EX1_604.webp",
+   "attack": 2,
+   "health": 4,
+   "effects": [
+    {
+     "trigger": "on_any_minion_damaged",
+     "actions": [
+      {
+       "do": "buff",
+       "atk": 1,
+       "hp": 0,
+       "to": "self"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_087",
+   "name": "力量祝福",
+   "cost": 1,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "使一个随从获得+3攻击力。",
+   "art": "res://assets/art/CS2_087.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "buff",
+       "atk": 3,
+       "hp": 0,
+       "to": "chosen"
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "CS2_089",
+   "name": "圣光术",
+   "cost": 2,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "为你的英雄恢复8点生命值。",
+   "art": "res://assets/art/CS2_089.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "heal",
+       "amount": 6,
+       "to": "chosen"
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "CS2_092",
+   "name": "王者祝福",
+   "cost": 4,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "使一个随从获得+4/+4。（+4攻击力/+4生命值）",
+   "art": "res://assets/art/CS2_092.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "buff",
+       "atk": 4,
+       "hp": 4,
+       "to": "chosen"
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "CS2_093",
+   "name": "奉献",
+   "cost": 3,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "对所有敌人造成2点伤害。",
+   "art": "res://assets/art/CS2_093.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage_all",
+       "amount": 2,
+       "pool": "enemy_characters",
+       "spell": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CS2_094",
+   "name": "愤怒之锤",
+   "cost": 3,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "造成3点伤害。抽一张牌。",
+   "art": "res://assets/art/CS2_094.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "damage",
+       "amount": 3,
+       "to": "chosen",
+       "spell": true
+      },
+      {
+       "do": "draw",
+       "count": 1,
+       "who": "owner"
+      }
+     ],
+     "target": "any"
+    }
+   ]
+  },
+  {
+   "id": "EX1_619",
+   "name": "生而平等",
+   "cost": 2,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "将所有随从的生命值变为1。",
+   "art": "res://assets/art/EX1_619.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "set_health",
+       "value": 1,
+       "to": "all_minions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_360",
+   "name": "谦逊",
+   "cost": 1,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "使一个随从的攻击力变为1。",
+   "art": "res://assets/art/EX1_360.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "set_attack",
+       "value": 1,
+       "to": "chosen"
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "EX1_371",
+   "name": "保护之手",
+   "cost": 1,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "使一个随从获得圣盾。",
+   "art": "res://assets/art/EX1_371.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "give_keyword",
+       "keyword": "DIVINE_SHIELD",
+       "to": "chosen"
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "EX1_362",
+   "name": "银色保卫者",
+   "cost": 2,
+   "type": "MINION",
+   "class": "PALADIN",
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "text": "战吼：使一个其他友方随从获得圣盾。",
+   "art": "res://assets/art/EX1_362.webp",
+   "attack": 3,
+   "health": 2,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "give_keyword",
+       "keyword": "DIVINE_SHIELD",
+       "to": "chosen"
+      }
+     ],
+     "target": "friendly_other_minion"
+    }
+   ]
+  },
+  {
+   "id": "EX1_382",
+   "name": "奥尔多卫士",
+   "cost": 3,
+   "type": "MINION",
+   "class": "PALADIN",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "战吼：使一个敌方随从的攻击力变为1。",
+   "art": "res://assets/art/EX1_382.webp",
+   "attack": 3,
+   "health": 3,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "set_attack",
+       "value": 1,
+       "to": "chosen"
+      }
+     ],
+     "target": "enemy_minion"
+    }
+   ]
+  },
+  {
+   "id": "CS2_088",
+   "name": "列王守卫",
+   "cost": 7,
+   "type": "MINION",
+   "class": "PALADIN",
+   "rarity": "FREE",
+   "set": "LEGACY",
+   "text": "嘲讽，战吼：为你的英雄恢复6点生命值。",
+   "art": "res://assets/art/CS2_088.webp",
+   "attack": 5,
+   "health": 7,
+   "effects": [
+    {
+     "trigger": "battlecry",
+     "actions": [
+      {
+       "do": "heal",
+       "amount": 6,
+       "to": "owner_hero"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_354",
+   "name": "圣疗术",
+   "cost": 6,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "EPIC",
+   "set": "EXPERT1",
+   "text": "恢复8点生命值，抽三张牌。",
+   "art": "res://assets/art/EX1_354.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "heal",
+       "amount": 8,
+       "to": "owner_hero"
+      },
+      {
+       "do": "draw",
+       "count": 3,
+       "who": "owner"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_384",
+   "name": "复仇之怒",
+   "cost": 6,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "EPIC",
+   "set": "EXPERT1",
+   "text": "造成8点伤害，随机分配到所有敌人身上。",
+   "art": "res://assets/art/EX1_384.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "random_damage",
+       "amount": 1,
+       "count": 8,
+       "pool": "enemy_characters",
+       "spell": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "EX1_355",
+   "name": "受祝福的勇士",
+   "cost": 5,
+   "type": "SPELL",
+   "class": "PALADIN",
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "text": "使一个随从的攻击力翻倍。",
+   "art": "res://assets/art/EX1_355.webp",
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "double_attack",
+       "to": "chosen"
+      }
+     ],
+     "target": "any_minion"
+    }
+   ]
+  },
+  {
+   "id": "GVG_058",
+   "name": "护盾机器人",
+   "cost": 2,
+   "type": "MINION",
+   "class": "PALADIN",
+   "rarity": "COMMON",
+   "set": "GVG",
+   "text": "圣盾",
+   "art": "res://assets/art/GVG_058.webp",
+   "attack": 2,
+   "health": 2,
+   "keywords": [
+    "DIVINE_SHIELD"
+   ]
+  }
+ ],
+ "tokens": [
+  {
+   "id": "CS2_tk1",
+   "name": "绵羊",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "",
+   "art": "res://assets/art/CS2_tk1.webp",
+   "token": true,
+   "attack": 1,
+   "health": 1
+  },
+  {
+   "id": "CS2_mirror",
+   "name": "镜像",
+   "cost": 0,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "嘲讽。",
+   "art": "res://assets/art/CS2_mirror.webp",
+   "token": true,
+   "attack": 0,
+   "health": 2,
+   "keywords": [
+    "TAUNT"
+   ]
+  },
+  {
+   "id": "CS2_101t",
+   "name": "白银之手新兵",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "",
+   "art": "res://assets/art/CS2_101t.webp",
+   "token": true,
+   "attack": 1,
+   "health": 1
+  },
+  {
+   "id": "CS2_152",
+   "name": "侍从",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "",
+   "art": "res://assets/art/CS2_152.webp",
+   "token": true,
+   "attack": 2,
+   "health": 2
+  },
+  {
+   "id": "skele21",
+   "name": "损坏的傀儡",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "",
+   "art": "res://assets/art/skele21.webp",
+   "token": true,
+   "attack": 2,
+   "health": 1
+  },
+  {
+   "id": "EX1_110t",
+   "name": "贝恩·血蹄",
+   "cost": 5,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "",
+   "art": "res://assets/art/EX1_110t.webp",
+   "token": true,
+   "attack": 5,
+   "health": 5
+  },
+  {
+   "id": "EX1_116t",
+   "name": "雏龙",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "",
+   "art": "res://assets/art/EX1_116t.webp",
+   "token": true,
+   "attack": 1,
+   "health": 1
+  },
+  {
+   "id": "EX1_finkle",
+   "name": "皮普·急智",
+   "cost": 3,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "",
+   "art": "res://assets/art/EX1_finkle.webp",
+   "token": true,
+   "attack": 3,
+   "health": 3
+  },
+  {
+   "id": "NEW1_026t",
+   "name": "紫罗兰学徒",
+   "cost": 1,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "",
+   "art": "res://assets/art/NEW1_026t.webp",
+   "token": true,
+   "attack": 1,
+   "health": 1
+  },
+  {
+   "id": "NEW1_040t",
+   "name": "豺狼人",
+   "cost": 2,
+   "type": "MINION",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "嘲讽。",
+   "art": "res://assets/art/NEW1_040t.webp",
+   "token": true,
+   "attack": 2,
+   "health": 2,
+   "keywords": [
+    "TAUNT"
+   ]
+  },
+  {
+   "id": "GAME_005",
+   "name": "幸运币",
+   "cost": 0,
+   "type": "SPELL",
+   "class": "NEUTRAL",
+   "rarity": "COMMON",
+   "set": "TOKEN",
+   "text": "在本回合中获得1个法力水晶。",
+   "art": "res://assets/art/GAME_005.webp",
+   "token": true,
+   "effects": [
+    {
+     "trigger": "spell",
+     "actions": [
+      {
+       "do": "gain_mana",
+       "amount": 1
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "version": 1,
+ "heroes": [
+  {
+   "id": "MAGE",
+   "name": "吉安娜·普罗德摩尔",
+   "title": "法师",
+   "hp": 30,
+   "portrait": "res://assets/art/HERO_08.webp",
+   "hero_power": {
+    "id": "HERO_POWER_MAGE",
+    "name": "火焰冲击",
+    "cost": 2,
+    "text": "造成1点伤害。",
+    "icon": "CS2_029",
+    "effects": [
+     {
+      "trigger": "hero_power",
+      "actions": [
+       {
+        "do": "damage",
+        "amount": 1,
+        "to": "chosen"
+       }
+      ],
+      "target": "any"
+     }
+    ],
+    "type": "HERO_POWER",
+    "class": "MAGE",
+    "art": "res://assets/art/CS2_029.webp"
+   },
+   "deck": [
+    "NEW1_012",
+    "NEW1_012",
+    "EX1_277",
+    "EX1_277",
+    "CS2_024",
+    "CS2_024",
+    "EX1_608",
+    "EX1_608",
+    "CS2_027",
+    "CS2_142",
+    "CS2_142",
+    "EX1_096",
+    "EX1_096",
+    "CS2_029",
+    "CS2_029",
+    "CS2_033",
+    "CS2_033",
+    "EX1_284",
+    "EX1_284",
+    "CS2_022",
+    "CS2_026",
+    "CS2_028",
+    "CS2_032",
+    "EX1_559",
+    "EX1_279",
+    "CS2_023",
+    "CS2_023",
+    "EX1_029",
+    "EX1_029",
+    "CS2_182"
+   ]
+  },
+  {
+   "id": "WARRIOR",
+   "name": "加尔鲁什·地狱咆哮",
+   "title": "战士",
+   "hp": 30,
+   "portrait": "res://assets/art/HERO_01.webp",
+   "hero_power": {
+    "id": "HERO_POWER_WARRIOR",
+    "name": "全副武装",
+    "cost": 2,
+    "text": "获得2点护甲值。",
+    "icon": "EX1_606",
+    "effects": [
+     {
+      "trigger": "hero_power",
+      "actions": [
+       {
+        "do": "armor",
+        "amount": 2,
+        "who": "owner"
+       }
+      ]
+     }
+    ],
+    "type": "HERO_POWER",
+    "class": "WARRIOR",
+    "art": "res://assets/art/EX1_606.webp"
+   },
+   "deck": [
+    "EX1_607",
+    "EX1_607",
+    "CS2_108",
+    "CS2_108",
+    "EX1_400",
+    "EX1_400",
+    "EX1_391",
+    "EX1_391",
+    "EX1_603",
+    "EX1_603",
+    "EX1_402",
+    "EX1_402",
+    "EX1_410",
+    "EX1_604",
+    "EX1_604",
+    "NEW1_011",
+    "NEW1_011",
+    "EX1_606",
+    "EX1_606",
+    "EX1_408",
+    "EX1_414",
+    "CS2_120",
+    "CS2_120",
+    "EX1_556",
+    "EX1_556",
+    "CS2_182",
+    "CS2_182",
+    "CS2_200",
+    "EX1_097",
+    "EX1_110"
+   ]
+  },
+  {
+   "id": "PALADIN",
+   "name": "乌瑟尔·光明使者",
+   "title": "圣骑士",
+   "hp": 30,
+   "portrait": "res://assets/art/HERO_04.webp",
+   "hero_power": {
+    "id": "HERO_POWER_PALADIN",
+    "name": "援军",
+    "cost": 2,
+    "text": "召唤一个1/1的白银之手新兵。",
+    "icon": "CS2_101t",
+    "effects": [
+     {
+      "trigger": "hero_power",
+      "actions": [
+       {
+        "do": "summon",
+        "card": "CS2_101t",
+        "count": 1,
+        "who": "owner"
+       }
+      ]
+     }
+    ],
+    "type": "HERO_POWER",
+    "class": "PALADIN",
+    "art": "res://assets/art/CS2_101t.webp"
+   },
+   "deck": [
+    "CS2_087",
+    "CS2_087",
+    "EX1_371",
+    "EX1_371",
+    "EX1_360",
+    "EX1_360",
+    "EX1_619",
+    "EX1_619",
+    "EX1_362",
+    "EX1_362",
+    "GVG_058",
+    "GVG_058",
+    "EX1_382",
+    "EX1_382",
+    "CS2_093",
+    "CS2_093",
+    "CS2_094",
+    "CS2_094",
+    "CS2_182",
+    "CS2_182",
+    "CS2_179",
+    "CS2_179",
+    "CS2_151",
+    "CS2_151",
+    "EX1_355",
+    "EX1_384",
+    "CS2_088",
+    "EX1_354",
+    "EX1_110",
+    "EX1_029"
+   ]
+  }
+ ]
+}

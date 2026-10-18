@@ -1,0 +1,40 @@
+; Engine configuration file.
+; 项目根目录：src/（代码与打包资源），卡牌原始素材位于 ../public。
+; 入口：src/ui/app.tscn
+
+config_version=5
+
+[application]
+
+config/name="小猴子卡牌"
+config/description="单机卡牌对战：三职业、100 张卡牌、人机对战"
+run/main_scene="res://ui/app.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://assets/ui/tavern-icon.png"
+
+[autoload]
+
+Sfx="*res://audio/sfx.gd"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.035, 0.043, 0.06, 1)
+
+[gui]
+
+theme/default_font_antialiasing=1
+
+[debug]
+
+gdscript/warnings/inference_on_variant=0
+gdscript/warnings/treat_warnings_as_errors=false
